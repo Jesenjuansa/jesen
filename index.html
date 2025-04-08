@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Juansa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fefaf5;
+      color: #2e2e2e;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 150px 20px 120px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    .section {
+      padding: 90px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #3e2f1c;
+      font-size: 2.7rem;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+      margin-bottom: 70px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      height: 230px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .two-column .text,
+    .two-column .image {
+      flex: 1 1 45%;
+    }
+
+    .two-column .image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    ul li::before {
+      content: "☕ ";
+      color: #a67c52;
+    }
+
+    .contact-card {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      border-radius: 20px;
+      padding: 70px 60px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .contact-card h2 {
+      color: #fff;
+      font-size: 2.9rem;
+      margin-bottom: 25px;
+    }
+
+    .contact-card p {
+      font-size: 1.25rem;
+      line-height: 2;
+    }
+
+    .contact-card a {
+      color: #f6c67a;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #2b1f14;
+      color: #fff;
+      text-align: center;
+      padding: 35px;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #d9a45f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .two-column {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Kopi Juansa</h1>
+    <p>Kopi Specialty dari Lereng Gunung Lestari, Jawa Barat</p>
+  </header>
+
+  <section class="section">
+    <div class="card two-column">
+      <div class="text">
+        <h2>Profil Perkebunan</h2>
+        <p>Kopi Juansa ditanam di lereng pegunungan Cisarua dengan ketinggian 1.200–1.500 mdpl. Kami menggunakan metode pertanian berkelanjutan dan pemrosesan pascapanen yang cermat untuk menjaga karakter unik kopi kami. Filosofi kami adalah menyatukan kualitas, keberlanjutan, dan rasa otentik dari tanah Sunda.</p>
+      </div>
+      <div class="image">
+        <img src="2.jpg" alt="Kebun kopi di pegunungan">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Galeri Kebun & Proses Kopi</h2>
+      <div class="gallery">
+        <img src="3.jpg" alt="Petani kopi memanen buah kopi">
+        <img src="4.jpeg" alt="Biji kopi yang sedang dijemur">
+        <img src="5.jpg" alt="Pohon kopi di pagi hari">
+        <img src="6.jpg" alt="Proses roasting kopi">
+        <img src="8.webp" alt="Tingkatan roasting kopi">
+        <img src="8.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="card two-column">
+      <div class="image">
+        <img src="1.jpeg" alt="Cupping kopi profesional">
+      </div>
+      <div class="text">
+        <h2>Proses & Karakteristik</h2>
+        <ul>
+          <li><strong>Varietas:</strong> Typica, Sigararutang</li>
+          <li><strong>Metode Proses:</strong> Fullwashed, Natural</li>
+          <li><strong>Fermentasi:</strong> 12–24 jam</li>
+          <li><strong>Pengeringan:</strong> Dijemur alami selama 10–15 hari</li>
+          <li><strong>Profil Rasa:</strong> Floral, Citrus, Medium Body, Bright Acidity</li>
+          <li><strong>Skor Cupping:</strong> 84 (SCAA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h2>Hubungi Kami</h2>
+      <p>
+        Ingin bekerja sama atau mencoba sampel kopi kami? Jangan ragu untuk menghubungi kami melalui kanal berikut:<br><br>
+        📞 WhatsApp: <a href="https://wa.me/6282258669447">+62 82258669447</a><br>
+        📷 Instagram: <a href="https://instagram.com/kopijuansa" target="_blank">@kopijuansa</a><br>
+        ✉️ Email: <a href="mailto:kopijuansa@email.com">kopijuansa@email.com</a><br>
+        🛍️ Shopee: <a href="https://shopee.co.id/kopijuansa" target="_blank">shopee.co.id/kopijuansa</a><br>
+        🛒 Tokopedia: <a href="https://tokopedia.com/kopijuansa" target="_blank">tokopedia.com/kopijuansa</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kopi Juansa. Dibuat dengan rasa cinta terhadap kopi. Semua hak dilindungi.
+  </footer>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.card, .two-column, .gallery img, .contact-card').forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 60,
+        duration: 1.2,
+        ease: "power3.out"
+      });
+    });
+
+    gsap.from("header h1", {
+      y: -60,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    });
+
+    gsap.from("header p", {
+      y: 40,
+      opacity: 0,
+      delay: 0.5,
+      duration: 1,
+      ease: "power2.out"
+    });
+  </script>
+</body>
+</html>
